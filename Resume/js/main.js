@@ -1,9 +1,7 @@
 ;(function () {
 	
 	'use strict';
-
-
-
+	
 	// iPad and iPod detection	
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
@@ -32,7 +30,6 @@
 
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
-		    	//navbar.attr('aria-expanded', 'false');
 		    	$('.js-resume-nav-toggle').removeClass('active');
 		    }
 
@@ -77,7 +74,6 @@
 
 	};
 
-
 	// Window Scroll
 	var windowScroll = function() {
 		var lastScrollTop = 0;
@@ -100,31 +96,6 @@
 			
 		});
 	};
-	
-	/* var createCircles = function() {
-		var colors = [
-			['#f6608a', '#ffffff'], 
-			['#f6608a', '#ffffff'], 
-			['#f6608a', '#ffffff'], 
-			['#f6608a', '#ffffff'], 
-			['#f6608a', '#ffffff'], 
-			['#f6608a', '#ffffff']
-		];
-		for (var i = 1; i <= 7; i++) {
-			var child = $('#circles-' + i),
-				percentage = 30 + (i * 10);
-				
-			Circles.create({
-				id:         child.id,
-				percentage: percentage,
-				radius:     80,
-				width:      10,
-				number:   	percentage / 1,
-				text:       '%',
-				colors:     colors[i - 1]
-			});
-		}
-	} */
 
 	// Document on load.
 	$(function(){
@@ -134,8 +105,7 @@
 		windowScroll();
 
 		navigationSection();
-		
-		/* createCircles(); */
+	
 	});
 
 
